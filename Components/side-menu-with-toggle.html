@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Side-menu-with-toggle</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./Components.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+  <div id="sidebar" class="sidebar">
+    <div class="toggle-btn-div d-none d-md-block" id="sidebar-toggle">
+        <i class="fa-solid expendnav fa-angles-left"></i>
+    </div>
+    
+    <ul class="list-unstyled ">
+      <li>
+        <a href="#"><i class="fas fa-home"></i> <p>Home</p></a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-calendar-alt"></i> Events</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-bell"></i> Alarms </a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-bell"></i> Alarms</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-bell"></i> Alarms </a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-bell"></i> Alarms </a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-bell"></i> Alarms</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-bell"></i> Alarms</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-bell"></i> Alarms</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-bell"></i> Alarms</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-bell"></i> Alarms</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-bell"></i> Alarms</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-bell"></i> Alarms</a>
+      </li>
+    </ul>
+    <ul class="bottom-link-ul">
+      <li class="bottom-links d-flex flex-column align-items-start justify-content-center">
+        <!-- <a href="#"><i class="fas fa-user"></i> User</a> -->
+        <div class="btn-group">
+          <a href="#" class="btn btn-secondary dropdown-toggle d-flex align-items-center bottom-a" data-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fas fa-user"></i> <p>User</p>
+            <i class="fas fa-chevron-down  dropdown-arrow ml-auto"></i>
+            <!-- Default Down Arrow -->
+          </a>
+          <div class="dropdown-menu ">
+            <a class="dropdown-item" href="#"><i class="fas fa-home"> </i>Profile</a>
+            <a class="dropdown-item" href="#"><i class="fas fa-home"> </i>Settings</a>
+            <a class="dropdown-item" href="#"><i class="fas fa-home"> </i>Logout</a>
+          </div>
+        </div>
+        <a href="#" class="bottom-a"><i class="fas fa-sign-out-alt"></i> Logout</a>
+      </li>
+    </ul>
+  </div>
+  <!-- Toggle Button  For Testing-->
+  <button class="btn btn-primary toggle-btn" onclick="toggleSidebar()">
+    <i class="fas fa-bars"></i>
+  </button>
+  <!-- jQuery and Popper.js (Required for Bootstrap 4 Navbar Toggle) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+  <script src="../Components/Script.js"></script>
+</body>
+
+</html>

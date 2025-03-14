@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Width Table with Pagination</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./Components.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body class="table-body px-3">
+    <div class="full-width-table p-3">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h4 class="table-head">Basic Table</h4>
+            <i class="fas fa-filter filter-icon"></i>
+        </div>
+        <div
+            class="d-flex  justify-content-center justify-content-md-between align-items-center  py-2 px-2 bg-light rounded shadow-sm date-filture-container">
+            <div class="d-flex flex-column flex-md-row align-items-center mb-2 mb-md-0">
+                <div class="d-flex align-items-center mx-2">
+                    <label class="fw-bold text-secondary me-2 input-lable">From:</label>
+                    <input type="date" class="form-control form-control-sm date-picker">
+                </div>
+                <div class="d-flex align-items-center mx-2 mt-2 mt-sm-0">
+                    <label class="fw-bold text-secondary me-2 input-lable">To:</label>
+                    <input type="date" class="form-control form-control-sm date-picker">
+                </div>
+            </div>
+            <!-- Tabs -->
+            <div class="container  d-flex justify-content-center justify-content-lg-end align-items-center m-2  ">
+                <div class="tabs-container">
+                    <div class="tab active" onclick="changeTab(this)">Day</div>
+                    <div class="tab" onclick="changeTab(this)">Week</div>
+                    <div class="tab" onclick="changeTab(this)">Month</div>
+                </div>
+            </div>
+        </div>
+        <div class="table-container mt-3">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead class="sticky-header">
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Steve</td>
+                            <td>Jobs</td>
+                            <td>@apple</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Elon</td>
+                            <td>Musk</td>
+                            <td>@tesla</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Bill</td>
+                            <td>Gates</td>
+                            <td>@microsoft</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Jeff</td>
+                            <td>Bezos</td>
+                            <td>@amazon</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Sundar</td>
+                            <td>Pichai</td>
+                            <td>@google</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Tim</td>
+                            <td>Cook</td>
+                            <td>@apple</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Satya</td>
+                            <td>Nadella</td>
+                            <td>@microsoft</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Michael</td>
+                            <td>Jordan</td>
+                            <td>@nike</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Oprah</td>
+                            <td>Winfrey</td>
+                            <td>@media</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Oprah</td>
+                            <td>Winfrey</td>
+                            <td>@media</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Oprah</td>
+                            <td>Winfrey</td>
+                            <td>@media</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Oprah</td>
+                            <td>Winfrey</td>
+                            <td>@media</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Oprah</td>
+                            <td>Winfrey</td>
+                            <td>@media</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Oprah</td>
+                            <td>Winfrey</td>
+                            <td>@media</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Oprah</td>
+                            <td>Winfrey</td>
+                            <td>@media</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Oprah</td>
+                            <td>Winfrey</td>
+                            <td>@media</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Oprah</td>
+                            <td>Winfrey</td>
+                            <td>@media</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Oprah</td>
+                            <td>Winfrey</td>
+                            <td>@media</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Oprah</td>
+                            <td>Winfrey</td>
+                            <td>@media</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Oprah</td>
+                            <td>Winfrey</td>
+                            <td>@media</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Oprah</td>
+                            <td>Winfrey</td>
+                            <td>@media</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Oprah</td>
+                            <td>Winfrey</td>
+                            <td>@media</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Oprah</td>
+                            <td>Winfrey</td>
+                            <td>@media</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Oprah</td>
+                            <td>Winfrey</td>
+                            <td>@media</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Oprah</td>
+                            <td>Winfrey</td>
+                            <td>@media</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <nav aria-label="Table Pagination d-flex justify-content-end">
+            <ul class="pagination d-flex justify-content-center ml-auto">
+            </ul>
+        </nav>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+    <script src="../Components/Script.js"></script>
+</body>
+
+</html>
